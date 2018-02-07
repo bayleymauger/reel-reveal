@@ -255,3 +255,26 @@ header a:hover {
   font-size: 16px;
   bottom: 15px;
 }
+
+.disc-tabs ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.disc-tabs ul li {
+  color: #abb7c4;
+  transition: .3s;
+  margin-right: 25px;
+}
+
+.disc-tabs ul li:hover {
+  transition: .3s;
+  color: #DDF64A;
+  cursor: pointer;
+}
+
+.disc-tabs .active {
+  color: #DDF64A;
+}

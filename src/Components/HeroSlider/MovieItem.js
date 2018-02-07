@@ -6,7 +6,7 @@ export default class MovieItem extends Component {
     return (
       <div className="movie-item">
         <div className="movie-img">
-          <img src={posterURL + this.props.poster} />
+          <img src={posterURL + this.props.poster} alt={this.props.title + " movie poster"} />
         </div>
         <div className="movie-info">
           <div className="movie-cat"></div>

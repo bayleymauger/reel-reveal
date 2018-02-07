@@ -16,8 +16,9 @@ class App extends Component {
   componentDidMount() {
     // POPULAR
     fetch('https://api.themoviedb.org/3/movie/popular?api_key=1208e42d5f9244b06b09af5465f9e155&language=en-US&page=1').then(res => {return res.json()}).then(response => {this.setState({popular: response.results})});
-
+    // NOW PLAYING
     fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=1208e42d5f9244b06b09af5465f9e155&language=en-US&page=1').then(res => {return res.json()}).then(response => this.setState({...this.state, nowPlaying: response.results}));
+    // COMING SOON
   }
 
   render() {
@@ -32,7 +33,7 @@ class App extends Component {
         </section>
         <section className="discover-section">
           <div className="content-wrapper">
-            <DiscoverSlider type="movie" nowPlaying={this.state.nowPlaying} />                     
+            <DiscoverSlider type="movies" nowPlaying={this.state.nowPlaying} />
           </div>
         </section>
       </div>

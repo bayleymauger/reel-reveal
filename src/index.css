@@ -14,7 +14,6 @@
 body {
   margin: 0;
   color: #fff;
-  background: #06121E;
   font-family: 'Dosis', sans-serif;
 }
 
@@ -120,8 +119,8 @@ header a:hover {
 }
 
 .l1 {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border: 5px solid #DDF64A;
   border-radius: 50%;
   border-bottom: none;
@@ -133,9 +132,9 @@ header a:hover {
 }
 
 .l2 {
-  height: 150px;
-  width: 150px;
-  border: 5px solid #DDF64A;
+  height: 50px;
+  width: 50px;
+  border: 5px solid #dd003f;
   border-top: none;
   border-left: none;
   border-radius: 50%;
@@ -272,8 +271,26 @@ header a:hover {
 
 /* DISCOVER SLIDER */
 
-.discover-slider {
+.discover-section {
+  background: #020E18;
+}
+
+.inner-disc {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.slider-wrapper {
   width: 70%;
+}
+
+.discover-slider {
+  width: 100%;
+}
+
+.discover-slider:first-of-type {
+  margin-bottom: 60px;
 }
 
 .discover-slider .slick-slider {
@@ -293,7 +310,7 @@ header a:hover {
 }
 
 .discover-slider h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .discover-slider h6 {
@@ -326,4 +343,62 @@ header a:hover {
 
 .disc-tabs .active {
   color: #DDF64A;
+}
+
+/* NEWS SECTION */
+
+.news-section {
+  width: 30%;
+  margin-left: 60px;
+}
+
+.news-section h4 {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.news-section hr {
+  border: .4px solid #415265;
+}
+
+.news-item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+hr+ .news-item , hr+ .news-item img {
+  margin-top: 10px;
+}
+
+.news-item:last-of-type {
+  margin-bottom: 40px;
+}
+
+.news-img {
+  width: 100%;
+}
+
+.news-img img {
+  width: 100%;
+}
+
+.news-info div p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.news-info .auth-date {
+  font-size: 12px;
+  color: #abb7c4;
+}
+
+/* TRAILER SECTION */
+
+.trailer-section {
+  width: 100%;
+  height: 600px;
+  background: #06121E;
 }

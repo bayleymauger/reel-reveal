@@ -17,6 +17,10 @@ export default class DiscoverSlider extends Component {
     } else if(this.props.type === 'tv shows') {
       this.setState({currentTab: 'onAir'});
     }
+
+    setTimeout(() => {
+      this.next();
+    }, 1000)
   }
 
   camelize(str) {
@@ -38,9 +42,6 @@ export default class DiscoverSlider extends Component {
   }
 
   render() {
-    setTimeout(() => {
-      this.next();
-    }, 1000)
 
     var settings = {
       dots: true,
@@ -48,7 +49,7 @@ export default class DiscoverSlider extends Component {
       slidesToScroll: 4,
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 6000,
+      autoplaySpeed: 7000,
       infinite: true,
     }
 
